@@ -10,3 +10,32 @@
 .container-x {
   max-width: 1216px!important;
 }
+
+.animate-bounce-right{
+animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+
+.ila {
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("../../public/assets/game-category/section-category-1.jpg");
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.controlGame {
+ background: url("../../public/assets/game-category/gameControl.jpg") center center no-repeat;
+}
