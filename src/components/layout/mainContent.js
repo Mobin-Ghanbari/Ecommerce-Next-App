@@ -3,6 +3,7 @@ import BrandSection from "../main/brandSection/BrandSection";
 import GamerProduct from "../main/categoryProduct/GamerProduct";
 import CountDownSale from "../main/countDownSale/CountDownSale";
 import FullBanner from "../main/fullBanner/FullBanner";
+import TopSelling from "../main/topSelling/TopSelling";
 
 const mainContent = () => {
   return (
@@ -11,6 +12,7 @@ const mainContent = () => {
       <GamerProduct />
       <BrandSection />
       <CountDownSale />
+      <TopSelling />
     </div>
   );
 };

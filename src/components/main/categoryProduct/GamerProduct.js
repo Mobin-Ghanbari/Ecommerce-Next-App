@@ -236,19 +236,19 @@ const GamerProduct = () => {
                     </div>
                     <div className="quick-access absolute top-24 group-hover:right-4  -right-10 flex flex-col space-y-3 transition-all ease-in-out duration-300">
                       <a href="exact-product">
-                        <span className=" bg-gray-100 w-9 h-9 flex items-center justify-center rounded-md">
+                        <span className=" bg-gray-100 w-10 h-10 flex items-center justify-center rounded-md">
                           <span className="material-icons">zoom_out_map</span>
                         </span>
                       </a>
                       <a href="wish-list">
-                        <span className=" bg-gray-100 w-9 h-9 flex items-center justify-center rounded-md">
+                        <span className=" bg-gray-100 w-10 h-10 flex items-center justify-center rounded-md">
                           <span className="material-icons">
                             favorite_border
                           </span>
                         </span>
                       </a>
                       <a href="add-product">
-                        <span className=" bg-gray-100 w-9 h-9 flex items-center justify-center rounded-md">
+                        <span className=" bg-gray-100 w-10 h-10 flex items-center justify-center rounded-md">
                           <span className="material-icons">shopping_cart</span>
                         </span>
                       </a>
