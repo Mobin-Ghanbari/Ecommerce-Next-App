@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "@/components/layout/header";
 import MainContent from "@/components/layout/mainContent";
 import DiscountBanner from "@/components/discount-banner/DiscountBanner";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <MainContent />
       </main>
       <DiscountBanner />
+      <Footer />
     </>
   );
 }
