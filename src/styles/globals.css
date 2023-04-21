@@ -39,10 +39,17 @@ animation: bounce 1s infinite;
 .controlGame {
  background: url("../../public/assets/game-category/gameControl.jpg") center center no-repeat;
 }
+.controlGames {
+ background:  center center no-repeat;
+}
 
 .countDown-background {
   background: url("../../public/assets/countDown-sale/campaign-cover-countdown.jpg") 0% 56% / cover no-repeat;
 }
 .download-app-background {
   background: url("../../public/assets/countDown-sale/download-app-cover.png") 0% 0% / cover no-repeat;
+}
+
+.discount-banner {
+  background: url("../components/discount-banner/discount-banner-1.jpg") 0% 0% / cover no-repeat;
 }
