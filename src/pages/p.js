@@ -1,3 +1,4 @@
+import ProductDetail from "@/components/singleProduct/ProductDetail";
 import ThumbNail from "@/components/singleProduct/ThumbNail";
 import Image from "next/image";
 import React from "react";
@@ -33,7 +34,9 @@ const p = () => {
                 >
                   <ThumbNail />
                 </div>
-                <div className="flex-1"></div>
+                <div className="flex-1">
+                  <ProductDetail />
+                </div>
               </div>
             </div>
           </div>

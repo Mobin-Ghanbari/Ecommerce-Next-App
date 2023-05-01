@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import Image from "next/image";
 import Samsung from "../../../../public/assets/fullBanner/banner-1.png";
 import AppleWatch from "../../../../public/assets/fullBanner/apple-whatch.png";
@@ -8,9 +7,6 @@ import Xbox from "../../../../public/assets/fullBanner/xbox5.png";
 import Services from "./Services";
 
 const FullBanner = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div className="w-full mb-[60px]">
       <div className="container-x mx-auto">
