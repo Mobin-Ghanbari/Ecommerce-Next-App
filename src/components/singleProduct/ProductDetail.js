@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import SizeDropDown from "./SizeDropDown";
 
 const ProductDetail = () => {
-  const [size, setSize] = useState(true);
   return (
     <div className="product-detail w-full mt-10 lg:mt-0">
       <span
@@ -85,37 +85,7 @@ const ProductDetail = () => {
         <span className="text-sm font-normal text-gray-600 uppercase mb-[14px] inline-block">
           SIZE
         </span>
-        <div className="w-full">
-          <div className="border border-gray-200 h-[50px] flex justify-between items-center px-6 cursor-pointer">
-            <div className="relative w-full font-[14px] ">
-              <button
-                type="button"
-                className="w-full flex justify-between"
-                onClick={() => setSize((prev) => !prev)}
-              >
-                <div>
-                  <span className="text-[13px] text-black">Medium</span>
-                </div>
-                <div className="flex space-x-10 items-center">
-                  <span className="text-[13px] text-black">
-                    3”W x 3”D x 7”H
-                  </span>
-                  <span className="material-icons text-2xl">expand_more</span>
-                </div>
-              </button>
-              <div
-                className={size ? "product-size-open" : "product-size-close"}
-              >
-                <ul>
-                  <li>Small</li>
-                  <li>Medium</li>
-                  <li>Large</li>
-                  <li>Extra Large</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SizeDropDown />
       </div>
     </div>
   );

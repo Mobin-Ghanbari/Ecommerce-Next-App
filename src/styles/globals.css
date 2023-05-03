@@ -60,7 +60,7 @@ animation: bounce 1s infinite;
 }
 
 
-.product-size-open{
+.product-size-close{
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 0 1px rgba(68,68,68,.11);
@@ -82,9 +82,31 @@ animation: bounce 1s infinite;
 }
 
 
-.product-size-close{
+.product-size-open{
   opacity: 1;
   -webkit-transform: scale(1) translateY(0);
   transform: scale(1) translateY(0);
   visibility: visible;
+}
+
+
+.size-list {
+  padding: 0;
+}
+
+.size-list div {
+  cursor: pointer;
+line-height: 40px;
+min-height: 40px;
+padding-left: 18px;
+outline: none;
+padding-right: 29px;
+
+  text-align: left;
+transition: all 0.2s;
+}
+
+.size-list div:hover {
+  background-color: #f6f6f6;
+  font-weight: 700;
 }

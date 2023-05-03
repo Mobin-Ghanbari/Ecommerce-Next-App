@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     AOS.init();
   }, []);
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden ">
       <Head>
         <link
           rel="stylesheet"
