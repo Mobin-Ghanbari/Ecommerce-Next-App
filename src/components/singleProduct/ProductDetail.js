@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import AddToCard from "./addToCard/AddToCard";
+import Quantity from "./addToCard/Quantity";
+import WishList from "./addToCard/WishList";
 import SizeDropDown from "./SizeDropDown";
 
 const ProductDetail = () => {
@@ -86,6 +89,69 @@ const ProductDetail = () => {
           SIZE
         </span>
         <SizeDropDown />
+      </div>
+
+      <div
+        data-aos="fade-up"
+        className="quantity-card w-full flex items-center h-[50px] space-x-[10px] mb-[30px]"
+      >
+        <Quantity />
+        <WishList />
+        <AddToCard />
+      </div>
+
+      <div data-aos="fade-up" className="mb-[20px]">
+        <p className="text-[13px] text-gray-400 leading-7">
+          <span className="text-black ">Category : </span>
+          Technology
+        </p>
+        <p className="text-[13px] text-gray-400 leading-7">
+          <span className="text-black ">Tags : </span>
+          Samsung
+        </p>
+        <p className="text-[13px] text-gray-400 leading-7">
+          <span className="text-black ">SKU : </span>
+          KE-91039
+        </p>
+      </div>
+
+      <div data-aos="fade-up" className="flex items-center space-x-2 mb-[20px]">
+        <span className="material-icons text-red-500 text-[20px]">flag</span>
+        <button
+          type="button"
+          className="text-red-500 font-semibold text-[13px]"
+        >
+          Report This Item
+        </button>
+      </div>
+
+      <div
+        data-aos="fade-up"
+        className="social-sharing flex items-center w-full"
+      >
+        <span className="text-black text-[13px] mr-[17px] inline-block">
+          Share This
+        </span>
+        <div className="flex space-x-5 items-center">
+          <a href="/facebook">
+            <img
+              className="w-[20px]"
+              src="/assets/social-sharing/facebook.png"
+            />
+          </a>
+          <a href="/twitter">
+            <img
+              className="w-[20px]"
+              src="/assets/social-sharing/pinterest.png"
+            />
+          </a>
+          <a href="/twitter">
+            <img
+              className="w-[18px]"
+              src="/assets/social-sharing/twitter.png"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
